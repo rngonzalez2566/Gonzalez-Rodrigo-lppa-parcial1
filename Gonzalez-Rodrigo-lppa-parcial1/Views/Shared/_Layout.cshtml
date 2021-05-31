@@ -10,16 +10,24 @@
 <body>
     <div id="contenedor">
         <header>
-            <div id="log"></div>
+            <div id="buscar">
+                <form action="#" method="post" id="buscador">
+                    Buscar &nbsp;
+                    <input name="busqueda" type="text" placeholder="BUSCADOR" />
+                </form>
+            </div>
         </header>
 
         <nav id="navegacion">
+            <img src="~/Content/Black_Crowes.png" alt="Logo" id="logo"/>
             <ul id="menu_principal">
                 <li> <a href="/">Home</a> </li>
                 <li>
                     <a href="@Url.Action("Index", "Afiliados")">Afiliados</a>
                 </li>
             </ul>
+
+          
         </nav>
 
         <section id="contenido">

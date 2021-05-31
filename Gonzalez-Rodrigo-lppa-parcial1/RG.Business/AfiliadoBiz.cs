@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Gonzalez_Rodrigo_lppa_parcial1.RG.Data.Services;
+using Gonzalez_Rodrigo_lppa_parcial1.RG.Entities.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;

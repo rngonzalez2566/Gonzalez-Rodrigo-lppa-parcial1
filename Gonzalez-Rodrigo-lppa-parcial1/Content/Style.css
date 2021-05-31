@@ -8,6 +8,12 @@
     background-color: black;
     height: 80px;
     border: 1px solid #d41010;
+    display: flex;
+}
+
+#buscador {
+    float: right;
+    height: 20px;
 }
 
 #menu_principal {

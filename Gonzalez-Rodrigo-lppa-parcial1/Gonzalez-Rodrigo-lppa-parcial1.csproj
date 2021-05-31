@@ -95,6 +95,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Black_Crowes.png" />
     <Content Include="Content\Style.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -113,7 +114,6 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RG.Business\AfiliadoBiz.cs" />
-    <Compile Include="RG.Business\ProductoBiz.cs" />
     <Compile Include="RG.Data\Services\BaseDataService.cs" />
     <Compile Include="RG.Data\Services\IDataService.cs" />
     <Compile Include="RG.Data\Services\lppaDBContext.cs" />
@@ -127,6 +127,9 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Afiliados\Index.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Afiliados\Create.cshtml" />
+    <Content Include="Views\Afiliados\Edit.cshtml" />
+    <Content Include="Views\Afiliados\Delete.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

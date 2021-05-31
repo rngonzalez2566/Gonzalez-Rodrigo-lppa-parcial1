@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Gonzalez_Rodrigo_lppa_parcial1.RG.Business;
+using Gonzalez_Rodrigo_lppa_parcial1.RG.Entities.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -22,14 +24,14 @@ namespace Gonzalez_Rodrigo_lppa_parcial1.Controllers
         }
 
         [HttpPost]
-        public ActionResult Create(Producto model)
+        public ActionResult Create(Afiliados model)
         {
             if (!ModelState.IsValid)
                 return View();
 
             try
             {
-                var biz = new ProductoBiz();
+                var biz = new AfiliadoBiz();
                 biz.Agregar(model);
                 return RedirectToAction("Index");
             }
@@ -44,14 +46,14 @@ namespace Gonzalez_Rodrigo_lppa_parcial1.Controllers
         [HttpGet]
         public ActionResult Delete(int id)
         {
-            var biz = new ProductoBiz();
+            var biz = new AfiliadoBiz();
             var model = biz.Get(id);
             return View(model);
         }
         [HttpPost]
-        public ActionResult Delete(Producto model)
+        public ActionResult Delete(Afiliados model)
         {
-            var biz = new ProductoBiz();
+            var biz = new AfiliadoBiz();
             biz.Eliminar(model);
             return RedirectToAction("Index");
         }
@@ -59,14 +61,14 @@ namespace Gonzalez_Rodrigo_lppa_parcial1.Controllers
         [HttpGet]
         public ActionResult Edit(int id)
         {
-            var biz = new ProductoBiz();
+            var biz = new AfiliadoBiz();
             var model = biz.Get(id);
             return View(model);
         }
         [HttpPost]
-        public ActionResult Edit(Producto model)
+        public ActionResult Edit(Afiliados model)
         {
-            var biz = new ProductoBiz();
+            var biz = new AfiliadoBiz();
             biz.Update(model);
             return RedirectToAction("Index");
         }
